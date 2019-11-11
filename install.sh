@@ -1,28 +1,15 @@
 #!/bin/bash
-cat <<EOF
-         _nnnn_
-        dGGGGMMb     ,"""""""""""""".
-       @p~qp~~qMb    | Arch Boi.    |
-       M|@||@) M|   _;..............'
-       @,----.JM| -'
-      JS^\__/  qKL
-     dZP        qKRb
-    dZP          qKKb
-   fZP            SMMb
-   HZM            MMMM
-   FqM            MMMM
- __| ".        |\dS"qML
- |    `.       | `' \Zq
-_)      \.___.,|     .'
-\____   )MMMMMM|   .'
-     `-'       `--' yeet
-EOF
+wget https://raw.githubusercontent.com/myles1509/CAIS/master/peng1.txt
+wget https://raw.githubusercontent.com/myles1509/CAIS/master/peng2.txt
+cat peng1.txt
 echo "This will fully reset linux"
 echo "Ensure ethernet is connected"
 read -p "Are you positive?" -n 1 -r Reply
 echo
 if [[ $Reply =~ ^[Yy]$ ]]
 then
+  wget https://raw.githubusercontent.com/myles1509/CAIS/master/installchroot.sh
+  chmod +x *.sh
   (
   echo d
   echo 6
