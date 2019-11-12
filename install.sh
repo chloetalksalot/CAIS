@@ -44,7 +44,9 @@ then
   cat /mnt/etc/fstab
   mkdir /mnt/scripts
   cp *.sh /mnt/scripts
+  cp *.txt /mnt/scrips
   arch-chroot /mnt /scripts/installchroot.sh
+  echo
   read -p 'Welcome to Arch! Make sure to download and run installpost.sh after reboot.' novar
   reboot
 fi

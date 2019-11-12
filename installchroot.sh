@@ -1,10 +1,12 @@
 #!/bin/bash
 cat peng2.txt
+echo
 read -p 'Root Password: ' RootPass
 echo
 read -p 'Username: ' User
 echo
 read -p 'User Password: ' UserPass
+echo
 (
 echo $RootPass
 echo $RootPass
