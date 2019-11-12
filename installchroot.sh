@@ -14,7 +14,7 @@ echo $RootPass
 ln -s /usr/share/zoneinfo/America/Boise /etc/localtime
 mkinitcpio -p linux
 pacman -S --noconfirm archlinux-keyring
-pacman -Syu --noconfirm grub efibootmgr lightdm lightdm-gtk-greeter lightdm-webkit2-greeter i3-gaps i3blocks i3status terminator os-prober vim wpa_supplicant wireless_tools networkmanager nano plasma sudo chromium git
+pacman -Syu --noconfirm grub efibootmgr lightdm lightdm-gtk-greeter lightdm-webkit2-greeter i3-gaps i3blocks i3status terminator os-prober vim wpa_supplicant wireless_tools networkmanager nano plasma sudo chromium git openssh
 mkdir /boot/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 grub-install /dev/sda
