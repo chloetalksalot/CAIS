@@ -5,6 +5,7 @@ wget https://raw.githubusercontent.com/myles1509/CAIS/master/gitsetup.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshinstall.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshrc
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/spinstall.sh
+wget https://raw.githubusercontent.com/myles1509/CAIS/master/lightdm
 cat elephant.txt
 chmod +x programs.sh
 chmod +x pacmanupdate.sh
