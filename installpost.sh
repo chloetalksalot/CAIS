@@ -4,6 +4,7 @@ wget https://raw.githubusercontent.com/myles1509/CAIS/master/pacmanupdate.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/gitsetup.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshinstall.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshrc
+wget https://raw.githubusercontent.com/myles1509/CAIS/master/spinstall.sh
 cat elephant.txt
 chmod +x programs.sh
 chmod +x pacmanupdate.sh
@@ -20,3 +21,4 @@ yay -Syyu
 ./gitsetup.sh
 ./programs.sh
 ./zshinstall.sh
+./spinstall.sh
