@@ -11,6 +11,7 @@ cd yay
 makepkg -si --noconfirm
 cd ..
 rm -rf yay
+yay -Syyu
 ./gitsetup.sh
 ./programs.sh
 
