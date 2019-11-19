@@ -23,3 +23,9 @@ yay -Syyu
 ./programs.sh
 ./zshinstall.sh
 ./spinstall.sh
+git clone https://github.com/vinceliuice/grub2-themes.git
+cd grub2-themes
+sudo ./install.sh -t
+cd ..
+rm -rf grub2-themes
+reboot
