@@ -28,4 +28,5 @@ cd grub2-themes
 sudo ./install.sh -t
 cd ..
 rm -rf grub2-themes
+sudo cp lightdm /etc/lightdm/lightdm-webkit2-greeter.conf
 reboot
