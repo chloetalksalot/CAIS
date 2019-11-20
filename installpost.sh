@@ -10,6 +10,7 @@ chmod +x programs.sh
 chmod +x pacmanupdate.sh
 chmod +x gitsetup.sh
 chmod +x zshinstall.sh
+chmod +x spinstall.sh
 ./pacmanupdate.sh
 sudo pacman -Syu --noconfirm go
 git clone https://aur.archlinux.org/yay.git
