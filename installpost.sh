@@ -19,6 +19,7 @@ cd yay
 makepkg -si --noconfirm
 cd ..
 rm -rf yay
+timedatectl set-local-rtc 1 --adjust-system-clock
 yay -Syyu
 ./gitsetup.sh
 ./programs.sh
