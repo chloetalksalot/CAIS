@@ -29,7 +29,6 @@ echo $UserPass
 ) | passwd $User
 echo "$User ALL=(ALL:ALL) ALL" >> /etc/sudoers
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/installpost.sh
-su - $User
 chmod +x installpost.sh
-./installpost.sh
+sudo -u $User installpost.sh
 exit
