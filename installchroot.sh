@@ -30,5 +30,5 @@ echo "Defaults        env_reset,timestamp_timeout=120"
 cd /home/$User/
 sudo -u $User wget https://raw.githubusercontent.com/myles1509/CAIS/testing/installpost.sh
 chmod +x installpost.sh
-sudo -u $User ./installpost.sh
+echo 'Make Sure to Run installpost.sh on reboot, you\'ll probably have to do it on tty2'
 exit
