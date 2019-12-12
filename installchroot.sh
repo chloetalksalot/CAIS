@@ -1,14 +1,5 @@
 #!/bin/bash
 echo CHROOTED!
-read -p 'Root Password: ' RootPass
-export RootPass
-echo
-read -p 'Username: ' User
-export User
-echo
-read -p 'User Password: ' UserPass
-export UserPass
-echo
 (
 echo $RootPass
 echo $RootPass
@@ -32,6 +23,7 @@ echo $UserPass
 echo $UserPass
 ) | passwd $User
 echo "$User ALL=(ALL:ALL) ALL" >> /etc/sudoers
+echo "Defaults        env_reset,timestamp_timeout=120"
 cd /home/$User/
 sudo -u $User wget https://raw.githubusercontent.com/myles1509/CAIS/master/installpost.sh
 chmod +x installpost.sh

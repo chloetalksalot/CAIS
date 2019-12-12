@@ -6,6 +6,15 @@ echo "This will fully reset linux"
 echo "Ensure ethernet is connected"
 read -p "Are you positive?" -n 1 -r Reply
 echo
+read -p 'Root Password: ' RootPass
+export RootPass
+echo
+read -p 'Username: ' User
+export User
+echo
+read -p 'User Password: ' UserPass
+export UserPass
+echo
 if [[ $Reply =~ ^[Yy]$ ]]
 then
   wget https://raw.githubusercontent.com/myles1509/CAIS/master/installchroot.sh
@@ -46,6 +55,6 @@ then
   cp * /mnt/scripts
   arch-chroot /mnt /scripts/installchroot.sh
   echo
-  read -p 'Welcome to Arch! Make sure to download and run installpost.sh after reboot.' novar
+  read -p "Welcome to Arch $User!" novar
   reboot
 fi
