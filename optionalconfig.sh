@@ -24,6 +24,7 @@ cd Projects
 git clone git@github.com:myles1509/CAIS.git
 git clone git@github.com:myles1509/archConfigs.git
 #ADD other projects here in future.
+cd ..
 echo "Git and configs setup."
 fi
 fi
