@@ -27,5 +27,4 @@ echo "Defaults        env_reset,timestamp_timeout=120"
 cd /home/$User/
 sudo -u $User wget https://raw.githubusercontent.com/myles1509/CAIS/master/installpost.sh
 chmod +x installpost.sh
-sudo -u $User ./installpost.sh
 exit
