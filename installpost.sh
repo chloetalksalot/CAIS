@@ -1,5 +1,5 @@
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/elephant.txt
-wget https://raw.githubusercontent.com/myles1509/CAIS/master/programs.sh
+wget https://raw.githubusercontent.com/myles1509/CAIS/testing/programs.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/pacmanupdate.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/gitsetup.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshinstall.sh

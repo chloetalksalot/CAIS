@@ -17,7 +17,7 @@ export UserPass
 echo
 if [[ $Reply =~ ^[Yy]$ ]]
 then
-  wget https://raw.githubusercontent.com/myles1509/CAIS/master/installchroot.sh
+  wget https://raw.githubusercontent.com/myles1509/CAIS/testing/installchroot.sh
   chmod +x *.sh
   (
   echo d
