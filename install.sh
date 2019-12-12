@@ -8,22 +8,22 @@ read -p "Are you positive?" -n 1 -r Reply
 mkdir vars
 echo
 read -p 'Root Password: ' RootPass
-echo RootPass=\"$RootPass\" >> /vars/RootPass
+echo RootPass=\"$RootPass\" >> /root/vars/RootPass
 echo
 read -p 'Username: ' User
-echo User=\"$User\" >> /vars/User
+echo User=\"$User\" >> /root/vars/User
 echo
 read -p 'User Password: ' UserPass
-echo UserPass=\"$UserPass\" >> /vars/UserPass
+echo UserPass=\"$UserPass\" >> /root/vars/UserPass
 echo
 read -p 'Github Username: ' GithubUser
-echo GithubUser=\"$GithubUser\" >> /vars/GithubUser
+echo GithubUser=\"$GithubUser\" >> /root/vars/GithubUser
 echo 
 read -p 'Github Email: ' GithubEmail
-echo GithubEmail=\"$GithubEmail\" >> /vars/GithubEmail
+echo GithubEmail=\"$GithubEmail\" >> /root/vars/GithubEmail
 echo
 read -p 'Github Password: ' GithubPass
-echo GithubPass=\"$GithubPass\" >> /vars/GithubPass
+echo GithubPass=\"$GithubPass\" >> /root/vars/GithubPass
 echo
 if [[ $Reply =~ ^[Yy]$ ]]
 then
@@ -64,7 +64,8 @@ then
   mkdir /mnt/scripts
   mkdir /mnt/scripts/vars
   cp * /mnt/scripts
-  cp /vars/* /mnt/scripts/vars/
+  cp /root/vars/* /mnt/scripts/vars/
+  rm -rf /root/vars
   arch-chroot /mnt /scripts/installchroot.sh
   echo
   read -p "Welcome to Arch $User!" novar
