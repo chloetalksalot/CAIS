@@ -1,10 +1,13 @@
 #!/bin/bash
 echo CHROOTED!
 read -p 'Root Password: ' RootPass
+export RootPass
 echo
 read -p 'Username: ' User
+export User
 echo
 read -p 'User Password: ' UserPass
+export UserPass
 echo
 (
 echo $RootPass

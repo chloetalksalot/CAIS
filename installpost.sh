@@ -16,7 +16,8 @@ chmod +x gitsetup.sh
 chmod +x zshinstall.sh
 chmod +x spinstall.sh
 chmod +x optionalconfig.sh
-cp zshasciiart ~/.config/zshasciiart
+mkdir /home/$User/.config/
+cp zshasciiart /home/$User/.config/zshasciiart
 ./pacmanupdate.sh
 sudo pacman -Syu --noconfirm go
 git clone https://aur.archlinux.org/yay.git
