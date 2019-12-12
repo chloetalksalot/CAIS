@@ -10,6 +10,7 @@ wget https://raw.githubusercontent.com/myles1509/CAIS/master/optionalconfig.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/pacman.conf
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshasciiart
 cat elephant.txt
+. /scripts/vars/User
 chmod +x programs.sh
 chmod +x pacmanupdate.sh
 chmod +x gitsetup.sh

@@ -5,15 +5,25 @@ cat peng1.txt
 echo "This will fully reset linux"
 echo "Ensure ethernet is connected"
 read -p "Are you positive?" -n 1 -r Reply
+mkdir vars
 echo
 read -p 'Root Password: ' RootPass
-export RootPass
+echo RootPass=\"$RootPass\" >> /vars/RootPass
 echo
 read -p 'Username: ' User
-export User
+echo User=\"$User\" >> /vars/User
 echo
 read -p 'User Password: ' UserPass
-export UserPass
+echo UserPass=\"$UserPass\" >> /vars/UserPass
+echo
+read -p 'Github Username: ' GithubUser
+echo GithubUser=\"$GithubUser\" >> /vars/GithubUser
+echo 
+read -p 'Github Email: ' GithubEmail
+echo GithubEmail=\"$GithubEmail\" >> /vars/GithubEmail
+echo
+read -p 'Github Password: ' GithubPass
+echo GithubPass=\"$GithubPass\" >> /vars/GithubPass
 echo
 if [[ $Reply =~ ^[Yy]$ ]]
 then
@@ -52,7 +62,9 @@ then
   genfstab -p /mnt >> /mnt/etc/fstab
   cat /mnt/etc/fstab
   mkdir /mnt/scripts
+  mkdir /mnt/scripts/vars
   cp * /mnt/scripts
+  cp /vars/* /mnt/scripts/vars/
   arch-chroot /mnt /scripts/installchroot.sh
   echo
   read -p "Welcome to Arch $User!" novar

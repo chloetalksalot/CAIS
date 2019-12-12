@@ -1,4 +1,5 @@
 #!/bin/bash
+. /scripts/vars/User
 read -p "Do you want Myles Becker's i3 .configs?" -n 1 -r Reply
 echo 
 if [[ $Reply =~ ^[Yy]$ ]]

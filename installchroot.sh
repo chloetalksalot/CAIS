@@ -1,5 +1,8 @@
 #!/bin/bash
 echo CHROOTED!
+. /scripts/vars/RootPass
+. /scripts/vars/User
+. /scripts/vars/UserPass
 (
 echo $RootPass
 echo $RootPass
