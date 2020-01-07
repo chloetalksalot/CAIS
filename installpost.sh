@@ -5,7 +5,7 @@ wget https://raw.githubusercontent.com/myles1509/CAIS/master/gitsetup.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshinstall.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshrc
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/spinstall.sh
-wget https://raw.githubusercontent.com/myles1509/CAIS/master/lightdm
+# wget https://raw.githubusercontent.com/myles1509/CAIS/master/lightdm
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/optionalconfig.sh
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/pacman.conf
 wget https://raw.githubusercontent.com/myles1509/CAIS/master/zshasciiart
@@ -36,7 +36,7 @@ cd grub2-themes
 sudo ./install.sh -t
 cd ..
 rm -rf grub2-themes
-sudo cp lightdm /etc/lightdm/lightdm.conf
-sudo cp webkit2 /etc/lightdm/lightdm-webkit2-greeter.conf
+# sudo cp lightdm /etc/lightdm/lightdm.conf
+# sudo cp webkit2 /etc/lightdm/lightdm-webkit2-greeter.conf
 ./optionalconfig.sh
 reboot
