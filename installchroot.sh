@@ -27,7 +27,7 @@ echo "Defaults        env_reset,timestamp_timeout=120"
 cd /home/$User/
 sudo -u $User wget https://raw.githubusercontent.com/myles1509/CAIS/master/installpost.sh
 # ADDED YAY?
-sudo -u $User git clone https://aur.archlinux.com/yay.git
+sudo -u $User git clone https://aur.archlinux.org/yay.git
 cd yay/
 sudo -u $User makepkg -si
 cd ..
