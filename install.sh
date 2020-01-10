@@ -46,7 +46,7 @@ then
   echo y
   ) | mkfs.ext4 -L "archRoot" /dev/sda6
   mount /dev/sda6 /mnt
-  pacstrap /mnt base base-devel linux linux-firmware
+  pacstrap /mnt base base-devel linux linux-firmware vim 
   mkdir -p /mnt/boot/efi
   mount /dev/sda2 /mnt/boot/efi
   genfstab -p /mnt >> /mnt/etc/fstab
